@@ -51,6 +51,8 @@ RUN apt-get -y update \
    gedit \
    gedit-plugins \
    evince \
+   gnuplot \
+   octave \
    libopenmpi-dev
    
 # install McXtrace, and make sure we use the python from the system for it
