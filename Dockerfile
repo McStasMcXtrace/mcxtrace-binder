@@ -36,6 +36,10 @@ RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtra
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-pyqtgraph-3.0-deb64.deb
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxrun-3.0-deb64.deb
 
+# we add iFit
+RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcrinstaller-7.13-2010a-amd64.deb
+RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/ifit-2.0.2-amd64.deb
+
 RUN apt-get -y update \
  && apt-get install -y dbus-x11 \
    firefox \
