@@ -38,6 +38,7 @@ RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtra
 
 # we add iFit
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcrinstaller-7.13-2010a-amd64.deb
+RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/libxp6_1.0.2-1ubuntu1_amd64.deb
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/ifit-2.0.2-amd64.deb
 
 RUN apt-get -y update \
