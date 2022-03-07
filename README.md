@@ -6,7 +6,7 @@
 
 McXtrace is available on Binder, which provides a free ready-to-run environment for simulations in your internet browser.
 
-Both the legacy version 1.x and the 'next-generation' 3.x (with revised grammar, compilation and performance efficiency) are available. You are welcome to use MPI clustering to distribute the computations over all CPU cores. There is however no GPU support for the 3.x release through Binder.
+Both the legacy version 1.x and the 'next-generation' 3.x (with revised grammar, compilation and performance efficiency) are available. You are welcome to use MPI clustering to distribute the computations over all CPU cores. There is however no GPU support for the 3.x release through Binder. The [HDF5/NeXus](https://www.nexusformat.org/) libraries, [Octave](https://www.gnu.org/software/octave/), [Gnuplot](http://www.gnuplot.info/) and [iFit(Matlab)](http://ifit.mccode.org/) are also available.
 
 :warning: The Binder service is free, but provides a limited computing power. This is suited for training and reasonable simulations.
 
