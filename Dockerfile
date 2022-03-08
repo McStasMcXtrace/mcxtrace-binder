@@ -62,7 +62,8 @@ RUN apt-get -y update \
    libopenmpi-dev \
    libnexus1 \
    libnexus-dev \
-   libncurses5
+   libncurses5 \
+   git
    
 # install McXtrace, and make sure we use the python from the system for it
 RUN apt install -y ./*.deb
