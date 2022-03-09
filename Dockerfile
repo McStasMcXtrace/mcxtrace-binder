@@ -10,6 +10,7 @@ RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtra
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-suite-python_1.7_all.deb
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-matlab-mxplot-1.7-deb64.deb
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-perl-cmdline-1.7-deb64.deb
+RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-perl-1.7-deb64.deb
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mccodelib-1.7-deb64.deb
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdisplay-pyqtgraph-1.7-deb64.deb
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdisplay-webgl-1.7-deb64.deb 
@@ -27,6 +28,7 @@ RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtra
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-suite-python-ng_3.0_all.deb
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-matlab-mxplot-3.0-deb64.deb
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-perl-cmdline-3.0-deb64.deb
+RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-perl-3.0-deb64.deb
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mccodelib-3.0-deb64.deb
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdisplay-pyqtgraph-3.0-deb64.deb
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdisplay-webgl-3.0-deb64.deb
@@ -41,6 +43,9 @@ RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcrins
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/libxp6_1.0.2-1ubuntu1_amd64.deb
 RUN wget http://ftp.de.debian.org/debian/pool/main/g/glibc/multiarch-support_2.28-10_amd64.deb
 RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/ifit-2.0.2-amd64.deb
+
+# Tk-CodeText
+RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/libtk-codetext-perl_0.3.4-1_all.deb
 
 RUN apt-get -y update \
  && apt-get install -y dbus-x11 \
@@ -63,7 +68,10 @@ RUN apt-get -y update \
    libnexus1 \
    libnexus-dev \
    libncurses5 \
-   git
+   git \
+   libpgplot-perl \
+   pdl \
+   perl-tk
    
 # install McXtrace, and make sure we use the python from the system for it
 RUN apt install -y ./*.deb
