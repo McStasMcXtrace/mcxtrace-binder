@@ -97,6 +97,10 @@ RUN echo "mxgui" >> /usr/local/bin/mxgui30_noconda
 RUN sed -i 's|Exec=mxgui|Exec=/usr/local/bin/mxgui30_noconda|' /usr/share/applications/McXtrace-3.0-py.desktop
 RUN chmod a+x /usr/local/bin/mxgui30_noconda
 
+# Remove perl launchers
+RUN rm /usr/share/applications/McXtrace-1.7-pl.desktop
+RUN rm /usr/share/applications/McXtrace-3.0-pl.desktop
+
 # Remove light-locker to prevent screen lock
 RUN wget 'https://sourceforge.net/projects/turbovnc/files/2.2.5/turbovnc_2.2.5_amd64.deb/download' -O turbovnc_2.2.5_amd64.deb && \
    apt-get install -y -q ./turbovnc_2.2.5_amd64.deb && \
