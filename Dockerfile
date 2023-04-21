@@ -52,8 +52,9 @@ RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/libtk
 
 RUN apt-get -y update \
  && apt-get install -y dbus-x11 \
-   firefox \
-   epiphany-browser \
+   midori \
+   netsurf-gtk \
+   dillo \
    xfce4 \
    xfce4-panel \
    xfce4-session \
