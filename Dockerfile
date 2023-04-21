@@ -21,6 +21,7 @@ RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtr
 RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-pyqtgraph-1.7.1-deb64.deb
 RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-svg-1.7.1-deb64.deb
 RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxrun-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-mcpl-1.7.1-deb64.deb
 
 # get McCode debian packages: release 3.1
 RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-3.1-deb64.deb
@@ -38,6 +39,7 @@ RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtr
 RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-matplotlib-3.1-deb64.deb
 RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-pyqtgraph-3.1-deb64.deb
 RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxrun-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-mcpl-3.1-deb64.deb
 
 # we add iFit
 RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcrinstaller-7.13-2010a-amd64.deb
