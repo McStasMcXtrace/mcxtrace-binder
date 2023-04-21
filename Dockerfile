@@ -42,7 +42,7 @@ RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtr
 # we add iFit
 RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcrinstaller-7.13-2010a-amd64.deb
 RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/libxp6_1.0.2-1ubuntu1_amd64.deb
-RUN wget https://ftp.de.debian.org/debian/pool/main/g/glibc/multiarch-support_2.28-10+deb10u1_amd64.deb
+RUN wget http://ftp.de.debian.org/debian/pool/main/g/glibc/multiarch-support_2.28-10+deb10u1_amd64.deb
 RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/ifit-2.0.2-amd64.deb
 
 # Tk-CodeText
