@@ -4,48 +4,49 @@ FROM jupyter/base-notebook
 USER root
 
 # get McCode debian packages: release 1.7.1
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-1.7.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-comps-1.7.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-manuals-1.7.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-suite-python_1.7.1_all.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-matlab-mxplot-1.7.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-perl-cmdline-1.7.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-perl-1.7.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mccodelib-1.7.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdisplay-pyqtgraph-1.7.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdisplay-webgl-1.7.1-deb64.deb 
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdoc-1.7.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxgui-1.7.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-matplotlib-1.7.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-pyqtgraph-1.7.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-svg-1.7.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxrun-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-comps-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-manuals-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-suite-python_1.7.1_all.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-suite-python_1.7.1_all.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-matlab-mxplot-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-perl-cmdline-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-perl-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mccodelib-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdisplay-pyqtgraph-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdisplay-webgl-1.7.1-deb64.deb 
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdoc-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxgui-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-matplotlib-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-pyqtgraph-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-svg-1.7.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxrun-1.7.1-deb64.deb
 
 # get McCode debian packages: release 3.1
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-3.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-comps-3.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-manuals-3.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-suite-python-ng_3.1_all.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-matlab-mxplot-3.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-perl-cmdline-3.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-perl-3.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mccodelib-3.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdisplay-pyqtgraph-3.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdisplay-webgl-3.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdoc-3.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxgui-3.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-matplotlib-3.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-pyqtgraph-3.1-deb64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxrun-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-comps-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-manuals-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-suite-python-ng_3.1_all.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-matlab-mxplot-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-perl-cmdline-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-perl-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mccodelib-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdisplay-pyqtgraph-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdisplay-webgl-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxdoc-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxgui-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-matplotlib-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxplot-pyqtgraph-3.1-deb64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcxtrace-tools-python-mxrun-3.1-deb64.deb
 
 # we add iFit
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcrinstaller-7.13-2010a-amd64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/libxp6_1.0.2-1ubuntu1_amd64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/mcrinstaller-7.13-2010a-amd64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/libxp6_1.0.2-1ubuntu1_amd64.deb
 RUN wget http://ftp.de.debian.org/debian/pool/main/g/glibc/multiarch-support_2.28-10_amd64.deb
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/ifit-2.0.2-amd64.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/ifit-2.0.2-amd64.deb
 
 # Tk-CodeText
-RUN wget http://packages.mccode.org/debian/dists/stable/main/binary-amd64/libtk-codetext-perl_0.3.4-1_all.deb
+RUN wget https://packages.mccode.org/debian/dists/stable/main/binary-amd64/libtk-codetext-perl_0.3.4-1_all.deb
 
 RUN apt-get -y update \
  && apt-get install -y dbus-x11 \
