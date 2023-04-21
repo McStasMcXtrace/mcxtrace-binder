@@ -101,8 +101,8 @@ RUN sed -i 's|Exec=mxgui|Exec=/usr/local/bin/mxgui30_noconda|' /usr/share/applic
 RUN chmod a+x /usr/local/bin/mxgui3_noconda
 
 # Remove perl launchers
-RUN rm /usr/share/applications/mcxtrace-1.7.1-pl.desktop
-RUN rm /usr/share/applications/mcxtrace-3.1-pl.desktop
+# RUN rm /usr/share/applications/mcxtrace-1.7.1-pl.desktop
+# RUN rm /usr/share/applications/mcxtrace-3.1-pl.desktop
 
 # Remove light-locker to prevent screen lock
 RUN wget 'https://sourceforge.net/projects/turbovnc/files/2.2.5/turbovnc_2.2.5_amd64.deb/download' -O turbovnc_2.2.5_amd64.deb && \
